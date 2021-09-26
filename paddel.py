@@ -45,8 +45,7 @@ pen.color("red")
 pen.penup()
 pen.hideturtle()
 pen.goto(0, 290)
-pen.write("Player A: 0  Payer B: 0", align="center",
-          font=("Courier", 15, "normal"))
+pen.write("Player A: 0  Payer B: 0", align="center",font=("Courier", 15, "normal"))
 
 # function
 
@@ -105,16 +104,14 @@ while True:
         ball.dx *= -1
         score_a += 1
         pen.clear()
-        pen.write("Player A: {}  Payer B: {}".format(score_a, score_b), align="center",
-                  font=("Courier", 15, "normal"))
+        pen.write("Player A: {}  Payer B: {}".format(score_a, score_b), align="center",font=("Courier", 15, "normal"))
 
     if ball.xcor() < -350:
         ball.goto(0, 0)
         ball.dx *= -1
         score_b += 1
         pen.clear()
-        pen.write("Player A: {}  Payer B: {}".format(score_a, score_b), align="center",
-                  font=("Courier", 15, "normal"))
+        pen.write("Player A: {}  Payer B: {}".format(score_a, score_b), align="center",font=("Courier", 15, "normal"))
 
     # paddel and ball collision
     if (ball.xcor() > 345 and ball.xcor() < 350) and (ball.ycor() < paddel_b.ycor() + 40 and ball.ycor() > paddel_b.ycor() - 40):
